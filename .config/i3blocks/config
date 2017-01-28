@@ -1,0 +1,95 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# background
+# border
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+separator=false
+
+#Now playing
+[MPD]
+label=♪
+command=mpc current
+color=#c7ae95
+interval=5
+
+
+
+#[mail]
+#command=/home/nubzor/.config/i3blocks/mail
+#interval=20
+
+#[weather]
+#command=/home/nubzor/.config/i3blocks/weather
+#oulu
+#instance=643492
+
+#[cpu]
+#label= 
+#command=/home/nubzor/.config/i3blocks/cpu_usage
+#interval=10
+
+
+
+# Volume indicator
+
+#command=~/.config/i3blocks/volume
+#interval=5
+#color=#c7ae95
+
+
+[ssid]
+command=/home/nub/.config/i3blocks/ssid
+interval=1
+#color=#ffffff
+color=#c7ae95
+
+
+[battery]
+command=/home/nub/.config/i3blocks/battery
+#instance=1
+interval=10
+#color=#ffffff
+color=#c7ae95
+
+
+# Date Time
+#
+[time]
+#label=[CLK]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+color=#c7ae95
+
+[shutdown_menu]
+full_text=
+# If you are using FontAwesome, we recommend the power-off icon:
+# http://fontawesome.io/icon/power-off/
+command=~/.config/i3blocks/shutdown_menu -c; echo Quit
+
+#

@@ -66,42 +66,26 @@ URxvt.perl-ext-common: selection-to-clipboard
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
 
-URxvt.background: #0d1926
-URxvt.foreground: #FFFFFF
+URxvt.background: #2E3440
+URxvt.foreground: #D8DEE9
 
-!!dark blue
-*.color0:#2E3440
-!!royal blue
-*.color1: #355c7d
-!!dark purple
-*.color2: #6c5b7b
-!!light pink
-*.color3: #f67280
-!!light red
-*.color4: #c06c84
-!!light green
-*.color5: #83af9b
-!!light yellow
-*.color6: #f8b195
-!!grey ice blue
-!!*.color7: #C7CCD1
-*.color7: #FFFFFF
-!!dark blue
-*.color8:#2E3440
-!!royal blue
-*.color9: #355c7d
-!!dark purple
-*.color10: #6c5b7b
-!!light pink
-*.color11: #f67280
-!!royal blue
-*.color12: #c06c84
-!!light green
-*.color13: #83af9b
-!!light yellow
-*.color14: #f8b195
-!!white
-*.color15: #FFFFFF
+
+*.color0: #3B4252
+*.color1: #BF616A
+*.color2: #A3BE8C
+*.color3: #EBCB8B
+*.color4: #81A1C1
+*.color5: #B48EAD
+*.color6: #88C0D0
+*.color7: #E5E9F0
+*.color8: #4C566A
+*.color9: #BF616A
+*.color10: #A3BE8C
+*.color11: #EBCB8B
+*.color12: #81A1C1
+*.color13: #B48EAD
+*.color14: #8FBCBB
+*.color15: #ECEFF4
 
 !-------------------------------------------
 ! Man pages colors

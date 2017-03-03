@@ -17,6 +17,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Roboto Regular 10
+#font pango:Hack 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -154,12 +155,12 @@ bindsym $mod+r mode "resize"
 
 
 #Gaps
-gaps inner 9
-gaps outer 5
-#for_window [class="^.*"] border pixel 3
+gaps inner 30
+gaps outer 15
+for_window [class="^.*"] border pixel 3
 new_window none
-#smart_gaps on
-#smart_borders on
+smart_gaps on
+smart_borders on
 
 
 #set $bar_bg #ffffffdd
@@ -176,14 +177,14 @@ set $bar_nt #e53935
 set $win_hl #bb212a
 set $win_bg #292929
 
+# border colors
+client.focused #00C1FF #00C1FF #000088 #00C1FF
+client.unfocused #BF616A #BF616A #BF616A #BF616A
+
+# class        border  backgr. text
+client.focused #A3BE8C #A3BE8C #A3BE8C
 
 
-# class                 border  backgr. text    indictr child_border
-client.focused          #ffffff $win_bg #ffffff #424242 $win_hl
-client.focused_inactive #333333 #5f676a #ffffff #333333 $win_bg
-client.unfocused        #333333 #222222 #888888 #333333 $win_bg
-client.urgent           #2f343a #900000 #ffffff #2f343a #900000
-client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c
 
 
 
@@ -191,28 +192,28 @@ client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-bar {
-        status_command i3blocks
+#bar {
+#       status_command i3blocks
 #	i3bar_command i3bar -t     
-	position top
-	mode dock 
-	tray_output none 
-	hidden_state hide
-	modifier $mod  
-	height 22
-	colors {
-		background $bar_bg
-                statusline $bar_fg 
-		separator  $bar_bg
-
-		#<colorclass>      <border>  <bgrnd>  <text>
-                focused_workspace  $bar_bg   $bar_bg  $bar_hl
-                active_workspace   $bar_bg   $bar_bg  $bar_hl
-                inactive_workspace $bar_bg   $bar_bg  $bar_fg
-                urgent_workspace   $bar_bg   $bar_bg  $bar_nt
-                binding_mode       $bar_bg   $bar_bg  $bar_hl
-   }
-}
+#	position top
+#	mode dock 
+#	tray_output none 
+#	hidden_state hide
+#	modifier $mod  
+#	height 22
+#	colors {
+#		background $bar_bg
+#               statusline $bar_fg 
+#		separator  $bar_bg
+#
+#		#<colorclass>      <border>  <bgrnd>  <text>
+#                focused_workspace  $bar_bg   $bar_bg  $bar_hl
+#                active_workspace   $bar_bg   $bar_bg  $bar_hl
+#                inactive_workspace $bar_bg   $bar_bg  $bar_fg
+#                urgent_workspace   $bar_bg   $bar_bg  $bar_nt
+#                binding_mode       $bar_bg   $bar_bg  $bar_hl
+#   }
+#}
 
 
 for_window [class="feh" instance="feh"] floating enable
@@ -241,3 +242,10 @@ bindsym Control+Mod1+Delete exec /home/nub/.config/i3blocks/shutdown_menu
 # startup
 #exec_always feh --bg-scale /home/nub/Downloads/wallpaper.jpg
 #exec_always compton -f
+#
+#Keepass autotype
+
+bindsym --release Ctrl+e exec keepass --auto-type
+
+#Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launcher.sh

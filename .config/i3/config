@@ -215,7 +215,6 @@ client.focused #A3BE8C #A3BE8C #A3BE8C
 #   }
 #}
 
-
 for_window [class="feh" instance="feh"] floating enable
 for_window [class="Pcmanfm" instance="pcmanfm"] floating enable
 
@@ -249,3 +248,6 @@ bindsym --release Ctrl+e exec keepass --auto-type
 
 #Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launcher.sh
+
+#imgur-screenshot
+bindsym $mod+Print exec imgur-screenshot

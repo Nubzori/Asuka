@@ -293,9 +293,10 @@ format-muted-suffix-background = ${colors.background-volume-nord}
 format-muted-prefix-background = ${colors.background-volume-nord}
 label-muted =   %percentage% 
 format-muted = <label-muted>
+
 [module/battery]
 type = internal/battery
-battery = BAT1
+battery = BAT0
 adapter = AC
 full-at = 100
 background = ${colors.background-battery-nord}

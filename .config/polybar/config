@@ -10,17 +10,17 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;nord 10
-background = #5E81AC
+background = #1E272B
 background-alt = #444
 background-desktop = #3B4252 
-background-battery-nord = #81A1C1
-background-wlan-nord = #BF616A 
-background-cpu-nord = #D08770 
-background-memory-nord = #B48EAD
-background-volume-nord = #EBCB8B 
+background-battery-nord = #1E272B
+background-wlan-nord = #1E272B 
+background-cpu-nord = #1E272B 
+background-memory-nord = #1E272B
+background-volume-nord = #1E272B 
 ;foreground = ${xrdb:color7:#222}
 ;nord 6
-foreground = #ECEFF4 
+foreground = #EAD49B 
 foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053
@@ -207,7 +207,7 @@ format-background = ${colors.background-cpu-nord}
 format-prefix = ${hacks.module-margin}
 format-suffix = ${hacks.module-margin}
 ;I'm pretty sure that this was the only way I could hack this in here
-label =%{B#D08770 F#ECEFF4}   %percentage%% %{B- F-}
+label =%{B#1E272B F#EAD49B}   %percentage%% %{B- F-}
 
 
 [module/memory]
@@ -217,7 +217,7 @@ format-prefix = ${hacks.module-margin}
 format-suffix = ${hacks.module-margin}
 format-suffix-background=${colors.background-memory-nord}
 format-prefix-background=${colors.background-memory-nord}
-label =%{B#B48EAD F#ECEFF4}   %percentage_used%% %{B- F-}
+label =%{B#1E272B F#EAD49B}   %percentage_used%% %{B- F-}
 
 [module/wlan]
 type = internal/network

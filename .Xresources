@@ -55,37 +55,59 @@ URxvt*iconFile: /usr/share/icons/Numix-Circle-Light/48/apps/terminal.svg
 !URxvt.matcher.button: 1
 URxvt.perl-ext-common: selection-to-clipboard
 
-! --- ~/.Xresources ------------------------------------------------------------
-! ------------------------------------------------------------------------------
-! --- generated with 4bit Terminal Color Scheme Designer -----------------------
-! ------------------------------------------------------------------------------
-! --- http://ciembor.github.com/4bit -------------------------------------------
-! ------------------------------------------------------------------------------
 
-! ------------------------------------------------------------------------------
-! --- end of terminal colors section -------------------------------------------
-! ------------------------------------------------------------------------------
+!*background:            #272827
+!*foreground:            #657b83
+!*fading:                15
+!*fadeColor:             black
+*cursorColor:           #16A085
+*pointerColorBackground:#2B2C2B
+*pointerColorForeground:#16A085
 
-URxvt.background: #2E3440
-URxvt.foreground: #D8DEE9
+URxvt.internalBorder: 6
+
+*foreground: #EAD49B
+*background: #1E272B
+*cursor: #EAD49B
+*color0: #1E272B
+*color1: #685742
+*color2: #9D6A47
+*color3: #B36D43
+*color4: #78824B
+*color5: #D99F57
+*color6: #C9A554
+*color7: #EAD49B
+*color9: #685742
+*color10: #9D6A47
+*color11: #B36D43
+*color12: #78824B
+*color13: #D99F57
+*color14: #C9A554
+*color15: #EAD49B
+*color8: #666666
+
+! ROFI SETUP HERE !
+
+! Enable the extended coloring options
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: #1E272B, #9D6A47, #9D6A47
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #1E272B, #EAD49B, #1E272B, #1E272B, #78824B
+rofi.color-active: #1E272B, #EAD49B, #1E272B, #1E272B, #78824B
+rofi.color-urgent: #1E272B, #EAD49B, #1E272B, #1E272B, #78824B
+
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 5
+rofi.font: Hack Regular 12
+rofi.bw: 1
+rofi.columns: 2
+rofi.padding: 5
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true
 
 
-*.color0: #3B4252
-*.color1: #BF616A
-*.color2: #A3BE8C
-*.color3: #EBCB8B
-*.color4: #81A1C1
-*.color5: #B48EAD
-*.color6: #88C0D0
-*.color7: #E5E9F0
-*.color8: #4C566A
-*.color9: #BF616A
-*.color10: #A3BE8C
-*.color11: #EBCB8B
-*.color12: #81A1C1
-*.color13: #B48EAD
-*.color14: #8FBCBB
-*.color15: #ECEFF4
 
 !-------------------------------------------
 ! Man pages colors
@@ -105,15 +127,4 @@ xclock*minuteColor:                 #9a875f
 xclock*hourColor:                   #9a875f
 xclock*secondColor:                 #9a875f
 
-!-------------------------------------------
-! rofi
 
-rofi.lines:                         6
-rofi.color-enabled:                 true
-rofi.separator-style:               none 
-rofi.width:                         40
-! rofi state:                          'bg'  'fg'  'bgalt'  'hlbg'  'hlfg'
-rofi.color-normal:                  argb:0016141a, #9e9f9a, argb:00101011, #2f2938, #f8f8f2
-rofi.color-urgent:                  argb:0016141a, #9e9f9a, argb:00101011, #2f2938, #f8f8f2
-rofi.color-active:                  argb:0016141a, #9e9f9a, argb:00101011, #2f2938, #a6e22a
-rofi.color-window:                  argb:ce16141a, #111111, #000000

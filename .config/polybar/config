@@ -10,14 +10,14 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;nord 10
-background = #1E272B
+background = #2F343F
 background-alt = #444
 background-desktop = #3B4252 
-background-battery-nord = #1E272B
-background-wlan-nord = #1E272B 
-background-cpu-nord = #1E272B 
-background-memory-nord = #1E272B
-background-volume-nord = #1E272B 
+background-battery-nord = #2F343F
+background-wlan-nord = #2F343F
+background-cpu-nord = #2F343F
+background-memory-nord = #2F343F
+background-volume-nord = #2F343F
 ;foreground = ${xrdb:color7:#222}
 ;nord 6
 foreground = #EAD49B 
@@ -207,7 +207,7 @@ format-background = ${colors.background-cpu-nord}
 format-prefix = ${hacks.module-margin}
 format-suffix = ${hacks.module-margin}
 ;I'm pretty sure that this was the only way I could hack this in here
-label =%{B#1E272B F#EAD49B}   %percentage%% %{B- F-}
+label =%{B#2F343F F#EAD49B}   %percentage%% %{B- F-}
 
 
 [module/memory]
@@ -217,7 +217,7 @@ format-prefix = ${hacks.module-margin}
 format-suffix = ${hacks.module-margin}
 format-suffix-background=${colors.background-memory-nord}
 format-prefix-background=${colors.background-memory-nord}
-label =%{B#1E272B F#EAD49B}   %percentage_used%% %{B- F-}
+label =%{B#2F343F F#EAD49B}   %percentage_used%% %{B- F-}
 
 [module/wlan]
 type = internal/network
@@ -260,8 +260,8 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+
+date = " %d.%m.%Y"
 
 time = %H:%M 
 time-alt = %H:%M:%S  

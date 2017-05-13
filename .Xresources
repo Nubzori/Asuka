@@ -37,9 +37,9 @@ URxvt*underlineURLs:                true
 
 URxvt.font: xft:Hack:pixelsize=12
 URxvt.boldFont: xft:Hack:style=Bold:pixelsize=12
-URxvt*font: :-*-dina-medium-r-*-*-*-90-*-*-*-*-*-*
-URxvt*italic: :-*-dina-medium-*-*-*-*-90-*-*-*-*-*-*
-URxvt*boldFont: :-*-dina-bold-r-*-*-*-90-*-*-*-*-*-*
+!URxvt*font: :-*-dina-medium-r-*-*-*-90-*-*-*-*-*-*
+!URxvt*italic: :-*-dina-medium-*-*-*-*-90-*-*-*-*-*-*
+!URxvt*boldFont: :-*-dina-bold-r-*-*-*-90-*-*-*-*-*-*
 !URxvt*font: -*-marathonmod-*-*-*-*-14-*-*-*-*-*-*-*
 !Urxvt*font: -*-tewii-*-*-*-*-*-*-*-*-*-*-*-*
 !URxvt*font: -*-marathon-medium-*-*-*-*-*-*-*-*-*-*-*
@@ -50,41 +50,48 @@ URxvt*iconFile: /usr/share/icons/Numix-Circle-Light/48/apps/terminal.svg
 
 
 !Clickable links
-!URxvt.perl-ext-common: default,matcher
-!URxvt.url-launcher: /usr/bin/xdg-open
-!URxvt.matcher.button: 1
-URxvt.perl-ext-common: selection-to-clipboard
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+!URxvt.perl-ext-common: selection-to-clipboard
+
+*.foreground:   #ffeefc
+*.background:   #141021
+*.cursorColor:  #c16772
+
+! black
+*.color0:       #4f4858
+*.color8:       #545d67
+
+! red
+*.color1:       #c05c47
+*.color9:       #c16772
+
+! green
+*.color2:       #428e8e
+*.color10:      #afda6e
+
+! yellow
+*.color3:       #e4b226
+*.color11:      #ebcf1a
+
+! blue
+*.color4:       #4457a3
+*.color12:      #4880a5
+
+! magenta
+*.color5:       #903a62
+*.color13:      #9568a1
+
+! cyan
+*.color6:       #7aa1dc
+*.color14:      #abbcda
+
+! white
+*.color7:       #c4b7c5
+*.color15:      #ffeefc
 
 
-!*background:            #272827
-!*foreground:            #657b83
-!*fading:                15
-!*fadeColor:             black
-*cursorColor:           #16A085
-*pointerColorBackground:#2B2C2B
-*pointerColorForeground:#16A085
-
-URxvt.internalBorder: 6
-
-*foreground: #EAD49B
-*background: #1E272B
-*cursor: #EAD49B
-*color0: #1E272B
-*color1: #685742
-*color2: #9D6A47
-*color3: #B36D43
-*color4: #78824B
-*color5: #D99F57
-*color6: #C9A554
-*color7: #EAD49B
-*color9: #685742
-*color10: #9D6A47
-*color11: #B36D43
-*color12: #78824B
-*color13: #D99F57
-*color14: #C9A554
-*color15: #EAD49B
-*color8: #666666
 
 ! ROFI SETUP HERE !
 

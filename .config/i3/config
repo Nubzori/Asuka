@@ -220,7 +220,7 @@ for_window [class="feh" instance="feh"] floating enable
 for_window [class="Pcmanfm" instance="pcmanfm"] floating enable
 
 exec compton --config ~/.config/compton.conf
-exec dropbox
+#exec dropbox
 #exec /home/nub/Downloads/eddie-ui_2.12.4_linux_x64_portable/eddie-ui_2.12.4_linux_x64_portable/airvpn
 
 
